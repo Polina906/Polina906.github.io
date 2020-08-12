@@ -1,0 +1,54 @@
+﻿<html>
+<head>
+<div id="u">
+<style>
+body{
+background-color:#16165f;
+color:#FFFFFF;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="галерея (2).css">
+</head>
+ <body>
+<script>
+u.style.paddingLeft="350px"
+</script>
+<p><img id="largeImg" src="редж.jpg" alt="Large image"></p>
+
+  <ul id="thumbs">
+   
+    <li>
+      <a href="редж.jpg"><img src="ре.jpg"></a>
+    </li>
+	<li>
+      <a href="сво.jpg" title="Image 2"><img src="с.jpg"></a>
+    </li>
+<li>
+      <a href="румп.jpg" title="Image 2"><img src="р.jpg"></a>
+    </li>
+<li>
+      <a href="gen.jpg" title="Image 2"><img src="g.jpg"></a>
+    </li>
+<li>
+      <a href="pr.jpg" title="Image 2"><img src="prr.jpg"></a>
+</li>
+</ul>
+<script>
+    thumbs.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+    }
+
+ 
+ function showThumbnail(href, title) {
+      largeImg.src = href;   
+ largeImg.alt = title;
+    }
+
+</script>
+
+</body>
+</html>
