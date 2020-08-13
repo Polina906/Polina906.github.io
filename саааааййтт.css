@@ -50,5 +50,6 @@ left:200px;
 @media all and (max-width: 450px) {
     #f1 {
         height: 100%;
+     width: 100%;
     }
 }
